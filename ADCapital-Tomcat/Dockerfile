@@ -1,7 +1,7 @@
 FROM tomcat:9-jre8
 
-RUN apt-get update
-RUN apt-get install -y yum
+RUN apt-get update && \
+    apt-get upgrade -y
 
 ENV DOCKERIZE_VERSION v0.5.0
 
